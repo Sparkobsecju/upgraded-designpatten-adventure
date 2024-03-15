@@ -1,7 +1,7 @@
 package com.practice.memento.game;
 
 // 守護者物件，保存遊戲角色的狀態
-public class Catetaker {
+public class Caretaker {
 
     // 如果只保存一次狀態
     private Memento memento;

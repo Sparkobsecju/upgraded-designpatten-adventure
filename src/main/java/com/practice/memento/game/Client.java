@@ -11,8 +11,8 @@ public class Client {
         gameRole.display();
 
         // 把當前狀態保存到 Caretaker
-        Catetaker catetaker = new Catetaker();
-        catetaker.setMemento(gameRole.createMemento());
+        Caretaker caretaker = new Caretaker();
+        caretaker.setMemento(gameRole.createMemento());
 
         System.out.println("和 Boss 大戰~~~~~");
         gameRole.setDef(30);
@@ -21,7 +21,7 @@ public class Client {
         gameRole.display();
 
         System.out.println("大戰後，使用備忘錄物件恢復到大戰前");
-        gameRole.recoverGameRoleFromMemento(catetaker.getMemento());
+        gameRole.recoverGameRoleFromMemento(caretaker.getMemento());
         System.out.println("恢復後的狀態");
         gameRole.display();
     }
